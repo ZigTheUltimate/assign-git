@@ -1,0 +1,11 @@
+• What is a gitignore file and what should it include for a Java project?
+-> There could be files in the local copy of your project that you do not want to apply version control to. That is, they are not required by other developers. For example, .class in java projects or IDE metadat files like.project files in Eclipse. gitignore is a list of these files that you want Git to ignore in version control.
+
+• What does fast-forward in git mean?
+-> If two branches only differ by a commit, it is possible to merge them by just forwarding the branch which is behind to the matching commit of the other branch. This simple way of merging two branches is called "fast-forwarding".
+
+• Why should you have different branches?
+-> The master branch is usually considered to have the release-ready version of your project. So, when you want to add new features to the project, adding them directly to the master branch, or main branch could induce a buggy or broken code into release. So, it is safer to diverge from the root copy into a new branch, develop and test new features there, and then merge them into the main branch when they are release-ready.
+
+• In a project how many remote Git repositories do you usually have?
+-> In most cases, you only require one remote repository which can act as a central copy of the project from which everyone involved in the development can push and/or pull from it as per their roles. But, it is possible to have multiple remotes in cases where you want to maintain multiple copies of your project(maybe for backup).
